@@ -8,12 +8,12 @@ function nestedTarget() {
 
 function deepestChild() {
   let node = document.querySelector('#grand-node')
-  //above tells me to get the div
+  //above tells me to get the div and all of its contents
   let nextNode = node.children[0]
   //above tells me to get the div's first child
 
   while (nextNode) {
-    node = nextNode
+    nextNode = node
     nextNode = node.children[0]
   }
 
